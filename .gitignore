@@ -1,0 +1,6 @@
+node_modules/
+target/
+dist/
+.env
+*.log
+backend/src/main/resources/application.properties
