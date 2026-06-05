@@ -1,0 +1,1 @@
+-- Demo data is seeded by Spring Boot CommandLineRunner.
