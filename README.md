@@ -1,10 +1,8 @@
 <div align="center">
 
-# 📦 ParcelProof
-
 ### 🚚 Courier Delivery & Proof-of-Delivery System
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=020617&height=145&section=header&text=ParcelProof&fontSize=46&fontColor=22C55E&animation=fadeIn&fontAlignY=35" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=020617&height=145&section=header&text=📦ParcelProof&fontSize=46&fontColor=22C55E&animation=fadeIn&fontAlignY=35" width="100%" />
 
 <br/>
 
