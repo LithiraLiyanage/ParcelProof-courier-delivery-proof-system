@@ -1,0 +1,1 @@
+-- Timeline and audit rows are created by the Spring Boot service layer. Add database-level triggers here if needed.
