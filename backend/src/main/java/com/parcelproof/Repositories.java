@@ -1,0 +1,6 @@
+package com.parcelproof;
+import org.springframework.data.jpa.repository.*;import java.time.*;import java.util.*;
+interface UserRepo extends JpaRepository<AppUser,Long>{Optional<AppUser> findByEmail(String e);boolean existsByEmail(String e);List<AppUser> findByRole(UserRole r);List<AppUser> findByRoleAndStatus(UserRole r,UserStatus s);} 
+interface ParcelRepo extends JpaRepository<Parcel,Long>{Optional<Parcel> findByTrackingCode(String c);boolean existsByTrackingCode(String c);List<Parcel> findByAssignedDriver(AppUser d);List<Parcel> findByCustomer(AppUser c);long countByStatus(ParcelStatus s);} 
+interface AttemptRepo extends JpaRepository<DeliveryAttempt,Long>{long countByParcel(Parcel p);long countByAttemptStatus(AttemptStatus s);List<DeliveryAttempt> findByAttemptStatus(AttemptStatus s);long countByDriverAndAttemptStatus(AppUser d,AttemptStatus s);long countByDriverAndAttemptedAtBetween(AppUser d,LocalDateTime a,LocalDateTime b);} 
+interface TimelineRepo extends JpaRepository<ParcelTimeline,Long>{List<ParcelTimeline> findByParcelOrderByCreatedAtAsc(Parcel p);List<ParcelTimeline> findByParcelAndPublicVisibleOrderByCreatedAtAsc(Parcel p,Boolean v);} interface AuditRepo extends JpaRepository<AuditLog,Long>{List<AuditLog> findTop100ByOrderByCreatedAtDesc();}
