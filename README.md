@@ -26,9 +26,6 @@
 
 **ParcelProof** is a full-stack **Spring Boot + PostgreSQL + React** courier delivery management system with parcel booking, driver assignment, OTP proof-of-delivery, failed attempt tracking, public parcel tracking, delivery timelines, CSV reports, SQL views/functions/triggers, JWT security, and a dark green/black premium dashboard UI.
 
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=22C55E&height=4&section=footer" width="100%" />
 
 </div>
 
